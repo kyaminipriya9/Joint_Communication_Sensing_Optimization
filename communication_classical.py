@@ -1348,8 +1348,8 @@ if __name__ == "__main__":
 
     # Change this to your actual .mat dataset path.
      ### mat_file = "12th_may_ideal_dataset.mat"
-    mat_file = "jointopt_unfolding_dataset_50_setups.mat"
-    # mat_file = "12th_may_ideal_dataset_with_alpha.mat"
+    # mat_file = "jointopt_unfolding_dataset_50_setups.mat"
+    mat_file = "12th_may_ideal_dataset_with_alpha.mat"
     # mat_file = "one_setup_required_values_10dB.mat"
     K_use = 8
     M_use = 16
@@ -1357,9 +1357,9 @@ if __name__ == "__main__":
 
     # Current setting uses one setup, matching your uploaded code.
     # For 10 setups, use: test_setups = np.arange(0, 10)
-    test_setups = np.arange(40,50)
+    test_setups = np.arange(0,1)
 
-    power_list = np.arange(0, 10, 10)
+    power_list = np.arange(-20, 31, 5)
 
     results = run_classical_power_sweep(
         mat_file=mat_file,
